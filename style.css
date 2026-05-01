@@ -1,0 +1,449 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+section {
+  overflow: hidden;
+}
+.header {
+  width: 100vw;
+  height: 64.4rem;
+  overflow: hidden;
+}
+.center {
+  width: 70%;
+  height: fit-content;
+  padding:1.5rem 0rem;
+  margin: 10rem auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+.left .img-box {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  margin: 7.6rem 0rem 0rem 6.1rem;
+}
+
+.left .img-box img {
+  width: 32rem;
+  position: absolute;
+  top: 0px;
+  left: -2.5rem;
+  cursor: pointer;
+}
+
+.left .img-box img:active{
+  cursor: grabbing;
+}
+
+.left .text p {
+  font-size: 2.7rem;
+  text-align: left;
+  margin: 0rem 0rem 0rem 6.4rem;
+}
+
+/* End Left Side */
+.center .right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin-top: 2rem;
+}
+
+.center .right form {
+  box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.226);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  width: 70%;
+  margin: 1.5rem 0rem 0rem 8.5rem;
+  border: 0.1rem solid rgba(128, 128, 128, 0.189);
+}
+
+input::placeholder {
+  color: rgb(128, 128, 128);
+}
+
+input:focus::placeholder {
+  color: rgba(128, 128, 128, 0.472);
+}
+
+.center .right form div input {
+  width: 100%;
+  padding: 1.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border: 0.1rem solid rgba(128, 128, 128, 0.357);
+  outline: none;
+}
+
+.center .right form div input[type="text"]:focus {
+  outline: 0.1rem solid rgb(0, 119, 255);
+  background: transparent;
+}
+.center .right form div input[type="password"]:focus {
+  outline: 0.1rem solid rgb(0, 119, 255);
+  background: transparent;
+}
+
+.center .right form div:nth-child(2) {
+  position: relative;
+}
+
+.center .right form div:nth-child(2) img {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.2rem;
+  width: 2.8rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.center .right form div:nth-child(2) img:active {
+  cursor: grabbing;
+}
+
+.center .right form div:nth-child(3) input {
+  width: 98%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  background: rgb(0, 115, 255);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.2rem 0.5rem;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.287);
+}
+
+.center .right form div:nth-child(3) input:active {
+  cursor: grabbing;
+}
+
+.center .right form div:nth-child(4) p {
+  margin: 1.5rem 0rem 1rem 0rem;
+  font-size: 1.5rem;
+  color: rgb(20, 122, 246);
+}
+
+.center .right form div:nth-child(4) p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.center .right form div:nth-child(4) p:active {
+  cursor: grabbing;
+}
+
+.center .right form div:nth-child(5) {
+  width: 100%;
+  height: 0.1rem;
+  background: rgba(128, 128, 128, 0.291);
+  margin: 2rem 0rem;
+}
+
+.center .right form div:nth-child(6) button {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  background: rgb(0, 186, 0);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.287);
+}
+
+.center .right form div:nth-child(6) button:active {
+  cursor: grabbing;
+}
+
+.center .right form + p {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.center .right form + p a {
+  font-weight: bold;
+}
+
+.center .right form + p a:hover {
+  text-decoration: underline;
+}
+
+.center .right form + p a:active {
+  cursor: grabbing;
+}
+
+.footer {
+  width: 100%;
+  /* height: 15rem;
+  background:red; */
+  overflow: hidden;
+}
+.footer .center {
+  width: 62.7%;
+  margin: auto;
+  /* background: gray; */
+}
+.footer .top,
+.middle,
+.bottom {
+  width: 100%;
+  padding: 0rem 0rem;
+  text-align: left;
+}
+
+.footer .top {
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.344);
+  /* height: 3.5rem; */
+  line-height: 3rem;
+}
+
+.footer .top a:nth-child(12) button {
+  padding: 0rem 1.3rem;
+  border: 0.1rem solid grey;
+  border-radius: 0.3rem;
+  font-size: 1.8rem;
+  color: grey;
+}
+.footer .top a:nth-child(12) button:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer .top a:nth-child(12) button:active {
+  cursor: grabbing;
+}
+
+.footer .middle {
+  /* height: 15rem; */
+  /* line-height: 8rem; */
+  padding-top: 1rem;
+}
+
+.footer .bottom {
+  margin-top: 1.5rem;
+}
+
+.footer .top a,
+.middle a,
+.bottom a {
+  padding: 0rem 1rem;
+  margin: 0rem 0rem 1rem 0rem;
+  font-size: 1.24rem;
+  display: inline-block;
+  color: grey;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active{
+  cursor: grabbing;
+}
+
+@media only screen and (max-width: 1400px) {
+  .center {
+    width: 85%;
+    margin: 10rem auto;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  .left .img-box {
+    width: 100%;
+    height: 10rem;
+    margin: 7.6rem 0rem 0rem 6.1rem;
+  }
+
+  .left .img-box img {
+    width: 32rem;
+  }
+
+  .left .text p {
+    font-size: 2.6rem;
+    margin: 0rem 0rem 0rem 6.4rem;
+  }
+
+  /* End Left Side */
+  .center .right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .center {
+    width: 90%;
+    margin: 10rem auto;
+  }
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1151px) {
+  .center {
+    width: 90%;
+  }
+  .left .text p {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .center {
+    width: 95%;
+  }
+  .left .text p {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .center {
+    width: 100%;
+  }
+   .center .right form div:nth-child(2) img {
+    top: 1.8rem;
+    right: 1.2rem;
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .center {
+    width: 70%;
+    height: 50rem;
+    margin: 2rem auto;
+    overflow: visible;
+  }
+  .center .left {
+    padding: 1.5rem 0rem;
+  }
+
+  .left .img-box {
+    width: 100%;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+  .left .img-box img {
+    position: static;
+  }
+
+  .left .text p {
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .center .left,
+  .center .right {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .center .right form {
+    width: 90%;
+    margin: auto;
+  }
+    .center .right form div:nth-child(2) img {
+    top: 1.8rem;
+    right: 1.2rem;
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .left .text p {
+    font-size: 1.8rem;
+  }
+
+  .left .img-box img {
+    width: 30rem;
+  }
+  .center .right form {
+    width: 100%;
+  }
+  .center .right form div:nth-child(2) img {
+    top: 2rem;
+    right: 1.2rem;
+    width: 2.2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .left .text p {
+    font-size: 1.5rem;
+  }
+
+  .left .img-box img {
+    width: 29rem;
+  }
+  .center .right form div:nth-child(2) img {
+    top: 2rem;
+    right: 1.2rem;
+    width: 2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .left .text p {
+    font-size: 1rem;
+  }
+
+  .center .right form div:nth-child(3) input {
+    font-size: 1.5rem;
+    padding: 1rem 0.8rem;
+  }
+  .center .right form div:nth-child(6) button {
+    font-size: 1.5rem;
+    padding: 1rem 0.8rem;
+  }
+  .center .right form div:nth-child(4) p {
+    font-size: 1.2rem;
+  }
+  .center .right form + p {
+    font-size: 1rem;
+  }
+  .center .right form div:nth-child(2) img {
+    top: 2rem;
+    right: 1.2rem;
+    width: 2rem;
+  }
+}
